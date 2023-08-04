@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="510.0" prefWidth="700.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="purchaseController">
+   <children>
+      <ImageView fitHeight="111.0" fitWidth="258.0" layoutX="221.0" layoutY="37.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/logo.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="137.0" layoutY="140.0" text="From Station: ">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <ChoiceBox fx:id="fromstFX" layoutX="304.0" layoutY="143.0" prefHeight="26.0" prefWidth="258.0" />
+      <Label layoutX="137.0" layoutY="192.0" text="To Station: ">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <ChoiceBox fx:id="tostFX" layoutX="304.0" layoutY="195.0" prefHeight="26.0" prefWidth="258.0" />
+      <Label layoutX="137.0" layoutY="238.0" text="Journey Date:">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="dateFX" layoutX="304.0" layoutY="241.0" prefHeight="26.0" prefWidth="258.0" />
+      <Button layoutX="264.0" layoutY="323.0" mnemonicParsing="false" onAction="#SearchButton" prefHeight="40.0" prefWidth="172.0" text="Search Train">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Button>
+      <Label layoutX="283.0" layoutY="414.0" text="Recent Searches:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button layoutX="41.0" layoutY="49.0" mnemonicParsing="false" onAction="#BackButton" prefHeight="43.0" prefWidth="84.0" text="Back" />
+   </children>
+</AnchorPane>
